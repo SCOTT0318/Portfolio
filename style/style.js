@@ -56,17 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const background = document.querySelector('.background-image');
-    
-    // 스크롤에 따라 스케일 조정 (예: 스크롤 500px당 최대 1.5배)
+    if (!background) return;
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const maxScroll = 500;
     const scale = 1 + (scrollTop / maxScroll) * 1.5;
-    
-    // 스케일의 최소값과 최대값 설정
-    const minScale = 1;
-    const maxScaleValue = 1.5;
-    const newScale = Math.min(Math.max(scale, minScale), maxScaleValue);
-    
+    const newScale = Math.min(Math.max(scale, 1), 1.5);
+
     background.style.transform = `scale(${newScale})`;
 });
