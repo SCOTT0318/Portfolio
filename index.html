@@ -1,320 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박범준 | Backend Portfolio</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCOTT0318 Portfolio</title>
+    <meta
+      name="description"
+      content="SCOTT0318의 프로젝트, 소개, 연락처를 담은 포트폴리오 사이트"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <nav class="site-nav" aria-label="주요 메뉴">
-            <a class="logo" href="#top" aria-label="박범준 포트폴리오 홈">Beom Joon</a>
-            <ul class="nav-links">
-                <li><a href="#board">게시판</a></li>
-                <li><a href="#stock">주식 데이터</a></li>
-                <li><a href="#pothole">AI 감지</a></li>
-            </ul>
+      <div class="container header-inner">
+        <a class="logo" href="#home">SCOTT0318</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-copy">
-                <p class="eyebrow">Backend & Web Application Portfolio</p>
-                <h1 id="hero-title">문제를 서비스 흐름으로 연결하는 개발자, 박범준입니다.</h1>
-                <p class="hero-description">
-                    Flask와 Python을 중심으로 인증, 데이터베이스, 파일 처리, 데이터 시각화,
-                    객체 감지까지 실제 사용 흐름이 있는 웹 애플리케이션을 구현했습니다.
-                </p>
-                <div class="skill-strip" aria-label="핵심 기술">
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>MySQL</span>
-                    <span>JavaScript</span>
-                    <span>OpenCV</span>
-                    <span>YOLO</span>
-                </div>
-            </div>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <p class="eyebrow">PORTFOLIO</p>
+          <h1>안녕하세요, SCOTT0318입니다.</h1>
+          <p class="hero-desc">
+            꾸준히 만들고 개선한 결과물을 정리하는 개인 포트폴리오입니다.
+          </p>
+          <a class="btn" href="#projects">프로젝트 보기</a>
+        </div>
+      </section>
 
-            <div class="hero-summary" aria-label="포트폴리오 요약">
-                <div>
-                    <strong>03</strong>
-                    <span>완성 프로젝트</span>
-                </div>
-                <div>
-                    <strong>10</strong>
-                    <span>화면/기능 캡처</span>
-                </div>
-                <div>
-                    <strong>02</strong>
-                    <span>동작 시연 영상</span>
-                </div>
-            </div>
-        </section>
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            웹 개발을 중심으로 사용자 경험과 유지보수성을 함께 고려하며
+            개발합니다. 작은 개선을 반복해 완성도를 높이는 방식을 선호합니다.
+          </p>
+        </div>
+      </section>
 
-        <section class="overview" aria-labelledby="overview-title">
-            <div>
-                <p class="section-label">Focus</p>
-                <h2 id="overview-title">백엔드 구현을 사용자 경험으로 완성합니다.</h2>
-            </div>
-            <div class="focus-grid">
-                <article>
-                    <span>01</span>
-                    <h3>인증과 세션</h3>
-                    <p>회원가입, 로그인, 비밀번호 해시, 사용자별 데이터 흐름을 Flask 기반으로 구성했습니다.</p>
-                </article>
-                <article>
-                    <span>02</span>
-                    <h3>데이터 관리</h3>
-                    <p>MySQL과 SQLite를 활용해 게시글, 주식, 감지 기록처럼 목적이 다른 데이터를 모델링했습니다.</p>
-                </article>
-                <article>
-                    <span>03</span>
-                    <h3>시각화와 자동화</h3>
-                    <p>Plotly.js와 YOLO/OpenCV를 연결해 데이터 탐색과 객체 감지 결과를 화면에서 확인하게 했습니다.</p>
-                </article>
-            </div>
-        </section>
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <article class="card">
+              <h3>Project One</h3>
+              <p>프로젝트 설명을 여기에 작성하세요.</p>
+              <a href="#" aria-label="Project One 링크">자세히 보기</a>
+            </article>
+            <article class="card">
+              <h3>Project Two</h3>
+              <p>프로젝트 설명을 여기에 작성하세요.</p>
+              <a href="#" aria-label="Project Two 링크">자세히 보기</a>
+            </article>
+            <article class="card">
+              <h3>Project Three</h3>
+              <p>프로젝트 설명을 여기에 작성하세요.</p>
+              <a href="#" aria-label="Project Three 링크">자세히 보기</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <section id="board" class="project-section" aria-labelledby="board-title">
-            <div class="project-heading">
-                <p class="section-label">Project 01</p>
-                <h2 id="board-title">Flask 웹 게시판 애플리케이션</h2>
-                <p>
-                    사용자 인증, 게시글 작성, 파일 업로드를 하나의 흐름으로 묶은 웹 게시판입니다.
-                    로그인 이후 게시글과 첨부 파일을 관리할 수 있도록 기본 CRUD 구조를 구현했습니다.
-                </p>
-            </div>
-
-            <div class="project-body">
-                <div class="project-info">
-                    <div class="info-group">
-                        <h3>핵심 기능</h3>
-                        <ul class="feature-list">
-                            <li>회원가입과 로그인 기반 사용자 세션 관리</li>
-                            <li>게시글 작성, 수정, 삭제를 포함한 CRUD 흐름</li>
-                            <li>이미지와 영상 업로드를 고려한 게시글 작성 화면</li>
-                        </ul>
-                    </div>
-                    <div class="info-group">
-                        <h3>구현 포인트</h3>
-                        <p>
-                            Flask-Login과 SQLAlchemy를 활용해 사용자 인증과 데이터 저장 책임을 분리했습니다.
-                            화면 단에서는 게시판, 로그인, 회원가입, 작성 페이지가 자연스럽게 이어지도록 구성했습니다.
-                        </p>
-                    </div>
-                    <div class="code-note">
-                        <span>Core Flow</span>
-                        <pre><code>login_manager = LoginManager(app)
-login_manager.login_view = "login"
-
-class User(UserMixin, db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(100), unique=True)
-    password_hash = db.Column(db.String(200))</code></pre>
-                    </div>
-                    <div class="stack-list" aria-label="사용 기술">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>SQLAlchemy</span>
-                        <span>MySQL</span>
-                        <span>HTML/CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="media-panel">
-                    <div class="image-gallery">
-                        <figure class="media-card">
-                            <img src="data/board/board_main.png" alt="Flask 게시판 메인 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>게시판 메인</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/board/login_page.png" alt="게시판 로그인 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>로그인</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/board/register_page.png" alt="게시판 회원가입 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>회원가입</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/board/write_post.png" alt="게시글 작성 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>게시글 작성</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="video-panel">
-                    <span class="panel-label">Live Demo</span>
-                    <figure class="video-card">
-                        <video class="autoplay-video" autoplay loop muted playsinline preload="auto" poster="data/board/post_video_poster.jpg" aria-label="게시글 영상 업로드 시연">
-                            <source src="data/board/post_video.mp4" type="video/mp4">
-                            동영상이 지원되지 않습니다.
-                        </video>
-                        <figcaption>영상 업로드 시연</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="stock" class="project-section" aria-labelledby="stock-title">
-            <div class="project-heading">
-                <p class="section-label">Project 02</p>
-                <h2 id="stock-title">주식 데이터 관리 웹 애플리케이션</h2>
-                <p>
-                    종목 정보를 등록하고 기간별 주가 흐름을 시각화하는 Flask 기반 데이터 관리 도구입니다.
-                    입력, 저장, 조회, 그래프 렌더링까지 한 화면의 작업 흐름으로 연결했습니다.
-                </p>
-            </div>
-
-            <div class="project-body">
-                <div class="project-info">
-                    <div class="info-group">
-                        <h3>핵심 기능</h3>
-                        <ul class="feature-list">
-                            <li>종목명과 티커를 등록하고 수정하는 관리 기능</li>
-                            <li>검색한 종목의 가격 변동 그래프 렌더링</li>
-                            <li>Ajax 요청으로 화면 전환을 줄인 데이터 조회 경험</li>
-                        </ul>
-                    </div>
-                    <div class="info-group">
-                        <h3>구현 포인트</h3>
-                        <p>
-                            Flask 라우트에서 종목 데이터를 관리하고, Plotly.js 결과를 비동기 응답으로 받아
-                            사용자가 선택한 기간의 그래프를 즉시 확인할 수 있게 설계했습니다.
-                        </p>
-                    </div>
-                    <div class="code-note">
-                        <span>Async Chart</span>
-                        <pre><code>function fetchGraph(companyName, period) {
-    $.ajax({
-        url: "{{ url_for('update_chart') }}",
-        type: "POST",
-        contentType: "application/json",
-        data: JSON.stringify({ companyName, period })
-    });
-}</code></pre>
-                    </div>
-                    <div class="stack-list" aria-label="사용 기술">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>SQLite</span>
-                        <span>Plotly.js</span>
-                        <span>jQuery</span>
-                        <span>Bootstrap</span>
-                    </div>
-                </div>
-
-                <div class="media-panel">
-                    <div class="image-gallery">
-                        <figure class="media-card">
-                            <img src="data/stock/add_stock.png" alt="주식 종목 추가 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>종목 추가</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/stock/visualize_stock.png" alt="주식 데이터 시각화 페이지" class="gallery-item" loading="lazy">
-                            <figcaption>데이터 시각화</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pothole" class="project-section" aria-labelledby="pothole-title">
-            <div class="project-heading">
-                <p class="section-label">Project 03</p>
-                <h2 id="pothole-title">포트홀 감지 및 관리 시스템</h2>
-                <p>
-                    YOLO 모델과 OpenCV를 활용해 영상에서 포트홀을 감지하고, 감지 이미지를 데이터베이스에
-                    기록하는 관리 시스템입니다. 인증된 사용자가 결과를 조회하고 관리할 수 있도록 구성했습니다.
-                </p>
-            </div>
-
-            <div class="project-body">
-                <div class="project-info">
-                    <div class="info-group">
-                        <h3>핵심 기능</h3>
-                        <ul class="feature-list">
-                            <li>회원가입과 로그인으로 보호되는 대시보드</li>
-                            <li>YOLO 기반 포트홀 감지와 감지 이미지 저장</li>
-                            <li>감지 시간과 이미지 경로를 데이터베이스에 기록</li>
-                        </ul>
-                    </div>
-                    <div class="info-group">
-                        <h3>구현 포인트</h3>
-                        <p>
-                            실시간 영상 처리 루프에서 감지 결과를 이미지로 저장하고, 사용자 ID와 함께 DB에
-                            연결했습니다. 인증, 감지, 조회 흐름이 하나의 서비스처럼 동작하도록 설계했습니다.
-                        </p>
-                    </div>
-                    <div class="code-note">
-                        <span>Detection Flow</span>
-                        <pre><code>results = model(frame)
-annotated_frame = results[0].plot()
-box_detected = any(
-    detection.cls[0].item() == target_class
-    for detection in results[0].boxes
-)</code></pre>
-                    </div>
-                    <div class="stack-list" aria-label="사용 기술">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>MySQL</span>
-                        <span>OpenCV</span>
-                        <span>YOLO</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="media-panel">
-                    <div class="image-gallery">
-                        <figure class="media-card">
-                            <img src="data/pothole/login_hidden.png" alt="포트홀 시스템 로그인 비밀번호 숨김 화면" class="gallery-item" loading="lazy">
-                            <figcaption>로그인</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/pothole/register_pothole.png" alt="포트홀 시스템 회원가입 화면" class="gallery-item" loading="lazy">
-                            <figcaption>회원가입</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/pothole/login_visible.png" alt="포트홀 시스템 로그인 비밀번호 표시 화면" class="gallery-item" loading="lazy">
-                            <figcaption>비밀번호 표시</figcaption>
-                        </figure>
-                        <figure class="media-card">
-                            <img src="data/pothole/pothole_dashboard.png" alt="포트홀 감지 결과 대시보드" class="gallery-item" loading="lazy">
-                            <figcaption>감지 결과 대시보드</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="video-panel">
-                    <span class="panel-label">Live Demo</span>
-                    <figure class="video-card">
-                        <video class="autoplay-video" autoplay loop muted playsinline preload="auto" poster="data/pothole/model_detection_poster.jpg" aria-label="YOLO 포트홀 객체 감지 시연">
-                            <source src="data/pothole/model_detection.mp4" type="video/mp4">
-                            동영상이 지원되지 않습니다.
-                        </video>
-                        <figcaption>객체 감지 시연</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>협업/문의는 아래 이메일로 연락주세요.</p>
+          <a class="email" href="mailto:youremail@example.com"
+            >youremail@example.com</a
+          >
+        </div>
+      </section>
     </main>
 
-    <div id="mediaModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-content" role="document">
-            <div class="modal-bar">
-                <h2 id="modalTitle">프로젝트 미디어</h2>
-                <button class="close" type="button" aria-label="미디어 모달 닫기">닫기</button>
-            </div>
-            <img id="modalImage" src="" alt="" hidden>
-        </div>
-    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> SCOTT0318. All rights reserved.</small>
+      </div>
+    </footer>
 
-    <script src="style/style.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
